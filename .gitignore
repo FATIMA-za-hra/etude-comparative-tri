@@ -53,3 +53,11 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Executables
+tri
+test_tris
+*.o
+
+# Donnees brutes des mesures (les graphiques PNG restent versionnes)
+resultats/*.dat
