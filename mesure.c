@@ -41,7 +41,7 @@ void generer_instance(int *t, int n, TypeInstance type) {
     }
 }
 
-/* Horloge en secondes (haute résolution, Windows et Linux/macOS) */
+/* Horloge en secondes (haute résolution */
 static double maintenant(void) {
 #ifdef _WIN32
     LARGE_INTEGER freq, cpt;

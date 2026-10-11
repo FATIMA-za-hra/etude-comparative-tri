@@ -24,7 +24,7 @@ void tri_bulles(int *t, int n) {
                 echange = 1;
             }
         }
-        if (!echange) break; /* déjà trié */
+        if (!echange) break; 
     }
 }
 
@@ -74,9 +74,7 @@ void tri_fusion(int *t, int n) {
     free(tmp);
 }
 
-/* ---------- 5. Tri rapide : O(n log n) en moyenne, O(n^2) au pire ----------
-   Pivot au milieu (évite le pire cas sur tableaux triés) et récursion
-   sur la plus petite partie seulement (pile limitée à O(log n)). */
+/* ---------- 5. Tri rapide : O(n log n) en moyenne, O(n^2) au pire ---------- */
 static void rapide_rec(int *t, int bas, int haut) {
     while (bas < haut) {
         int pivot = t[bas + (haut - bas) / 2];
